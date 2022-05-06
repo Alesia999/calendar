@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+
+}
+.btn {
+  display: inline-block;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(138, 193, 214);
+}
+.btn-danger {
+  display: flex;
+  background-color: rgb(229, 130, 130);
+  max-width: 57px;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+}

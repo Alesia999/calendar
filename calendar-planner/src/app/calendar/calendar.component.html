@@ -1,0 +1,30 @@
+<p>
+  <i class="material-icons" (click)="switchToPrevMonth()">arrow_left</i>
+  <span>{{ date | date: "MMMM, yyyy" }}</span>
+  <i class="material-icons" (click)="switchToNextMonth()">arrow_right</i>
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let week of calendar">
+      <td
+        *ngFor="let date of week"
+        [ngClass]="{ disabled: !isSameMonth(date) }"
+        (click)="select(date)"
+      >
+        <span>{{ date | date: "d" }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+

@@ -20,7 +20,7 @@
       <td
         class="col"
         *ngFor="let date of week"
-        [ngClass]="{
+        [class]="{
           disabled: !isSameMonth(date),
           selected: isChosen(date),
           current: isSameDate(date)
